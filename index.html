@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kenton Beech" />
+    <meta name="description" content="W01 Home Page" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>W01 Home Page</title>
+
+  </head>
+
+  <body>
+    <!-- DONE -->
+    <header>
+      <div id="Banner1">
+        <img src="images/IMG-20240714-WA0019 (1).jpg" alt="" />
+        <h1>Kenton R. Beech</h1>
+      </div>
+
+      <button aria-label="links" class="hamburger" id="Hamburger"></button>
+      <nav id="PrimaryNav">
+        <!-- Menu items -->
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Chamber</a></li>
+          <li><a href="#">Github Profile</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/kenton-beech/" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="grid__container">
+        <section class="card1">
+          <h2>Course Work</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+
+        <section class="card2">
+          <h2>East London, South Africa</h2>
+          <figure>
+            <img
+              src="images/15_-_75520559-c56d-4582-b2a4-a54cb419d2dd.webp"
+              alt=""
+            />
+            <figcaption>South African Elephant</figcaption>
+          </figure>
+        </section>
+
+        <section class="card3">
+          <h2>Web and Computer Programming Certificate <span class="credits-remaining"></span></h2>
+          <div class="small__nav">
+            <ul>
+              <li class="all__courses">ALL</li>
+              <li class="cse__courses">CSE</li>
+              <li class="wdd__courses">WDD</li>
+            </ul>
+
+            <hr>
+
+            <div class="courses">
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p><span id="currentyear"></span> | Kenton Beech | South Africa</p>
+
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+  <script src="scripts/main.js" defer></script>
+</html>
