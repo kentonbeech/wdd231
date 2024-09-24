@@ -1,0 +1,14 @@
+{
+    "name": "Anova Health Institute",
+    "address": "12 Sherborne Road",
+    "phone number": "0119215000",
+    "website url": "https://anovahealth.co.za/",
+    "image": "https://anovahealth.co.za/wp-content/uploads/2024/09/anova-logo-new-300x96.png",
+    "membership level": [
+        {
+            "1": "member",
+            "2": "silver",
+            "3": "gold"
+        }
+    ]
+}
