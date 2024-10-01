@@ -1,14 +1,106 @@
-{
-    "name": "Anova Health Institute",
-    "address": "12 Sherborne Road",
-    "phone number": "0119215000",
-    "website url": "https://anovahealth.co.za/",
-    "image": "https://anovahealth.co.za/wp-content/uploads/2024/09/anova-logo-new-300x96.png",
-    "membership level": [
-        {
-            "1": "member",
-            "2": "silver",
-            "3": "gold"
-        }
-    ]
-}
+{"companies": [
+    {
+        "name": "Anova Health Institute",
+        "address": "info@anovahealth.co.za",
+        "phone number": "0115815000",
+        "website url": "https://anovahealth.co.za",
+        "image": "https://anovahealth.co.za/wp-content/uploads/2024/09/Management-of-Workplace-Relationships-SOP.png",
+        "membership level": [
+            {
+                "1": "member",
+                "2": "silver",
+                "3": "gold"
+            }
+        ]
+    },
+
+    {
+        "name": "Zedtek Designs",
+        "address": "zedtek.el@outlook.com",
+        "phone number": "0832344769",
+        "website url": "https://google.com",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR49qlb-Cc635wl_0mK3kl_4Umc-wwXDGWf0g&s",
+        "membership level": [
+            {
+                "1": "member",
+                "2": "silver",
+                "3": "gold"
+            }
+        ]
+    },
+
+    {
+        "name": "Resilient Servers & Networks",
+        "address": "servicedesk@rsan.co.za",
+        "phone number": "0430040075",
+        "website url": "https://rsan.co.za",
+        "image": "https://img1.wsimg.com/isteam/ip/b63af8aa-a734-486c-af44-c5ba254f7ba6/Resilient%20PNG.png/:/rs=w:309,h:91,cg:true,m/cr=w:309,h:91/qt=q:95",
+        "membership level": [
+            {
+                "1": "member",
+                "2": "silver",
+                "3": "gold"
+            }
+        ]
+    },
+
+    {
+        "name": "Tecgroup",
+        "address": "dwayne@tecgroup.co.za",
+        "phone number": "0834468670",
+        "website url": "https://tecgroup.co.za",
+        "image": "https://tecgroup.co.za/wp-content/uploads/2017/05/logos.jpg",
+        "membership level": [
+            {
+                "1": "member",
+                "2": "silver",
+                "3": "gold"
+            }
+        ]
+    },
+
+    {
+        "name": "Mercedes-Benz",
+        "address": "N/A",
+        "phone number": "0437069111",
+        "website url": "https://mercedes-benz.co.za",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mercedes-Benz_logo.svg/800px-Mercedes-Benz_logo.svg.png",
+        "membership level": [
+            {
+                "1": "member",
+                "2": "silver",
+                "3": "gold"
+            }
+        ]
+    },
+
+    {
+        "name": "Dewing Construction",
+        "address": "info@dewingconstruction.co.za",
+        "phone number": "0437436509",
+        "website url": "https://dewingconstruction.co.za",
+        "image": "https://www.dewingconstruction.co.za/images/dc_logo.png",
+        "membership level": [
+            {
+                "1": "member",
+                "2": "silver",
+                "3": "gold"
+            }
+        ]
+    },
+
+    {
+        "name": "Maizey Plastics",
+        "address": "nat.sales@maizey.co.za",
+        "phone number": "0437420627",
+        "website url": "https://maizey.co.za",
+        "image": "https://www.maizey.co.za/wp-content/uploads/2022/11/logo.png",
+        "membership level": [
+            {
+                "1": "member",
+                "2": "silver",
+                "3": "gold"
+            }
+        ]
+    }
+]}

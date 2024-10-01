@@ -1,0 +1,32 @@
+header h1 {
+    text-align: center;
+    color: #4D4D96;
+    font-family: "Arial";
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#cards section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B9B9CC;
+    border: 2px solid #4D4D96;
+    padding: 1.5em;
+    padding-bottom: 3rem;
+}
+
+#cards h2 {
+    color: #4D4D96;
+    font-family: "Arial";
+}
+
+#cards p {
+    font-family: "Arial";
+    line-height: 0;
+}
