@@ -282,6 +282,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-gsap.from('.home__grid', { duration: 1.5, x: '100%', ease: 'power1.in', opacity: 0 })
+gsap.from('.home__grid', { duration: 1.5, y: '50%', ease: 'power1.in', opacity: 0 })
 // gsap.from('.current__weather', { duration: 1.5, x: '100%', ease: 'power2.in', opacity: 0 })
 // gsap.from('.grid__content', { duration: 1, delay: 1, ease: 'powerin', opacity: 0 })

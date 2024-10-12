@@ -1,3 +1,8 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+
 body {
     transition: background-color 250ms ease;
     --background-color: #001F40;
@@ -45,6 +50,10 @@ html {
     display: flex;
     gap: 40px;
     align-items: center !important;
+}
+
+.nav-menu {
+    width: 40%;
 }
 
 .color__toggle img {
@@ -108,8 +117,8 @@ main {
     /* margin: 0 auto; */
     margin-top: 200px;
     padding: 0;
-    margin-left: 100px;
-    margin-right: 100px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
 }
 
 .hero__image {
@@ -244,7 +253,7 @@ main {
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 30%));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 30%));
     justify-content: space-around;
     margin-bottom: 100px;
     row-gap: 40px;
@@ -292,6 +301,7 @@ footer {
     background-color: var(--background-color);
     transition: background-color 250ms ease;
     padding: 20px 40px;
+    margin-top: 80px;
 }
 
 .footer__grid {
@@ -655,6 +665,7 @@ footer p {
 #membershipInfo {
     width: 1200px;
     max-width: calc(100% - 20px);
+    margin: auto;
 }
 
 #membershipInfo h1 {
@@ -855,8 +866,13 @@ ul.benefits-list {
     }
 
     main {
-        margin: 200px 30px auto 30px;
+        margin: 200px 0 auto 0;
     }
 
+    #cards {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
 
 }
