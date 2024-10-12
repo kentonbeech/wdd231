@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-darkmode="false">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Kenton Beech">
+	<meta name="description" content="Join the NextGen Network site.">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="scripts/main.js" defer></script>
+	<script src="scripts/join.js" defer></script>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="images/nextgen-network-favicon-black.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/nextgen-network-favicon-black.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/nextgen-network-favicon-black.png">
+	<link rel="manifest" href="images/site.webmanifest">
+
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- META TAGS FOR FACEBOOK SOCIAL MEDIA -->
+	<meta property="og:title" content="W01 Home Page" />
+	<meta property="og:description" content="Personal portfolio of university course work." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://kentonbeech.github.io/wdd231/" />
+	<meta property="og:image"
+		content="https://blog.pamgolding.co.za/wp-content/uploads/2018/08/East_London_Eastern_Cape_South_Africa_19888734444-1.jpg" />
+
+	<title>NextGen Network</title>
+</head>
+
+<body>
+	<header id="header">
+		<div class="header__row">
+			<div class="logo">
+				<a href="index.html"><img src="images/png/logo-no-background.png" alt="This is a test."></a>
+			</div>
+			<nav class="animated__nav">
+				<!-- Hamburger Icon for mobile -->
+				<div class="hamburger" id="hamburger">
+					<i class="fa fa-bars"></i>
+				</div>
+				<aside class="nav__toggle">
+					<ul class="nav__menu close" id="navMenu">
+						<li><a href="index.html" class="menu__items">Home</a></li>
+						<li><a href="directory.html" class="menu__items">Directory</a></li>
+						<li><a href="join.html" class="menu__items">Join</a></li>
+						<li><a href="#" class="menu__items">Discover</a></li>
+					</ul>
+					<div class="color__toggle">
+						<img src="images/dark-mode (2).png" alt="">
+					</div>
+				</aside>
+			</nav>
+		</div>
+	</header>
+
+	<main id="joinMain">
+		<form action="thankyou.html" method="get" id="form">
+			<h1>Membership Application Form</h1>
+
+
+			<label>First Name:
+				<input type="text" name="firstName" id="firstName" required autocomplete="given-name"
+					title="Your First Name">
+			</label>
+
+			<label>Last Name:
+				<input type="text" name="lastName" id="lastName" required autocomplete="family-name"
+					title="Your Last Name">
+			</label>
+
+			<label>Organizational Title:
+				<input type="text" name="title" title="Your Organizational Title" autocomplete="organization-title"
+					pattern="^[A-Za-z\s\-0]{7,}$" placeholder="Min 7 characters">
+			</label>
+
+			<label>Email:
+				<input type="email" name="email" id="email" required title="email" autocomplete="email"
+					placeholder="example@gmail.com" title="Your Email">
+			</label>
+
+			<label>Phone Number:
+				<input type="tel" required name="tel" title="Your Phone Number" autocomplete="tel">
+			</label>
+
+			<label>Organization Name:
+				<input type="text" required name="orgName" autocomplete="organization" title="Name of Organization">
+			</label>
+
+			<label>Organization Description:
+				<textarea type="text" title="Description of Organization" name="orgDescription"></textarea>
+			</label>
+
+			<h2>Membership Level:</h2>
+
+			<section id="memLevels">
+				<label><input type="radio" name="memLevel" value="non-profit">Non-Profit Membership</label>
+				<label><input type="radio" name="memLevel" value="bronze">Bronze Membership</label>
+				<label><input type="radio" name="memLevel" value="silver">Silver Membership</label>
+				<label><input type="radio" name="memLevel" value="gold">Gold Membership</label>
+			</section>
+
+			<input type="hidden" name="timestamp" id="timestamp" value="2024">
+			<input type="submit" value="Join NextGen Network now!" class="form-submit">
+
+		</form>
+
+		<section id="membershipInfo">
+			<h1>Membership Levels</h1>
+
+			<div class="membershipInfo-cards">
+				<div id="card1" class="cards">
+					<h2>Non-Profit Organization Level</h2>
+					<button id="nonProfit" class="member__btn">Learn More</button>
+				</div>
+
+				<div id="card2" class="cards">
+					<h2>Bronze Level</h2>
+					<button class="member__btn">Learn More</button>
+				</div>
+
+				<div id="card3" class="cards">
+					<h2>Silver Level</h2>
+					<button class="member__btn">Learn More</button>
+				</div>
+
+				<div id="card4" class="cards">
+					<h2>Gold Level</h2>
+					<button class="member__btn">Learn More</button>
+				</div>
+
+				<input type="hidden" name="timestamp" id="timestamp" value="2024-10-10T12:00:00Z">
+			</div>
+
+		</section>
+
+	</main>
+
+
+
+	<footer>
+		<div class="footer__grid">
+			<div class="col__1">
+				<p class="footer__heading">NextGen Network</p>
+				<p>10 Bamburgh Road</p>
+				<p>South Africa, 5241</p>
+				<p>bee23002@byui.edu</p>
+				<p>(+27) 63 723 2709</p>
+			</div>
+
+			<ul class="col__2">
+				<li>
+					<a class="facebook" href="https://facebook.com" target="_blank" aria-label="Facebook">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a class="twitter" href="https://x.com" target="_blank" aria-label="Twitter">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a class="instagram" href="https://instagram.com" target="_blank" aria-label="Instagram">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a class="linkedin" href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+
+			<div class="col__3">
+				<p>WDD231 Class Project</p>
+				<p>Kenton Beech</p>
+				<p>© <span id="year"></span> NextGen Network</p>
+				<p id="lastModified"></p>
+			</div>
+		</div>
+	</footer>
+
+	<dialog class="modal" id="course-details">
+		<div class="dialog-content">
+			<button id="closeModal"><img src="images/png/close.png" alt="close"></button>
+			<h3></h3>
+			<h4></h4>
+			<h3 class="benefits">Benefits:</h3>
+			<ul class="benefits-list">
+			</ul>
+		</div>
+	</dialog>
+
+</body>
+
+</html>

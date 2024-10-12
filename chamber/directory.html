@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kenton Beech">
+  <meta name="description" content="NextGen Network, connecting businesses with the community.">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/nextgen-network-favicon-black.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/nextgen-network-favicon-black.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/nextgen-network-favicon-black.png">
+  <link rel="manifest" href="images/site.webmanifest">
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- META TAGS FOR FACEBOOK SOCIAL MEDIA -->
+  <meta property="og:title" content="W01 Home Page" />
+  <meta property="og:description" content="Personal portfolio of university course work." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kentonbeech.github.io/wdd231/" />
+  <meta property="og:image"
+    content="https://blog.pamgolding.co.za/wp-content/uploads/2018/08/East_London_Eastern_Cape_South_Africa_19888734444-1.jpg" />
+  <title>Business Directory</title>
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="header__row">
+      <div class="logo">
+        <a href="index.html"><img src="images/png/logo-no-background.png" alt="This is a test."></a>
+      </div>
+      <nav class="animated__nav">
+        <!-- Hamburger Icon for mobile -->
+        <div class="hamburger" id="hamburger">
+          <i class="fa fa-bars"></i>
+        </div>
+        <aside class="nav__toggle">
+          <ul class="nav__menu close" id="navMenu">
+            <li><a href="index.html" class="menu__items">Home</a></li>
+            <li><a href="directory.html" class="menu__items">Directory</a></li>
+            <li><a href="join.html" class="menu__items">Join</a></li>
+            <li><a href="#" class="menu__items">Discover</a></li>
+          </ul>
+          <div class="color__toggle">
+            <img src="images/dark-mode (2).png" alt="">
+          </div>
+        </aside>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="companies">
+      <div class="toggle-btn-container">
+        <button id="toggleLayoutBtn">List View</button>
+      </div>
+      <div id="cards"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__grid">
+      <div class="col__1">
+        <p class="footer__heading">NextGen Network</p>
+        <p>10 Bamburgh Road</p>
+        <p>South Africa, 5241</p>
+        <p>bee23002@byui.edu</p>
+        <p>(+27) 63 723 2709</p>
+      </div>
+
+      <ul class="col__2">
+        <li>
+          <a class="facebook" href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="twitter" href="https://x.com" target="_blank" aria-label="Twitter">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="instagram" href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="linkedin" href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="col__3">
+        <p>WDD231 Class Project</p>
+        <p>Kenton Beech</p>
+        <p>© <span id="year"></span> NextGen Network</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

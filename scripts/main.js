@@ -1,14 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//   const hamburger = document.getElementById("Hamburger");
-//   const navMenu = document.getElementById("PrimaryNav");
-
-//   // Toggle the menu on click
-//   hamburger.addEventListener("click", function() {
-//     navMenu.classList.toggle("active");
-//   });
-// });
-
-
 document.addEventListener('DOMContentLoaded', () => {
   setActiveLink();
 });
@@ -58,10 +47,6 @@ window.addEventListener("resize", () => {
     navMenu.classList.remove("active");
   }
 });
-
-
-
-
 
 
 
@@ -185,6 +170,33 @@ wddCourses.addEventListener('click', (e) => {
 });
 
 
+function displayCourseDetailsDialog(course) {
+  const courseDetailsDialog = document.querySelector('#course-details');
+  const courseDetailsContent = document.querySelector('.dialog-content');
+
+  courseDetailsContent.innerHTML = '';
+  courseDetailsContent.innerHTML = `
+  <button id = "closeModal"><img src="/images/close.png" alt="close"></button>
+  <h2>${course.subject} ${course.number}</h2>
+  <h3>${course.title}</h3>
+  <p><strong>Credits</strong>: ${course.credits}</p>
+  <p><strong>Certificate</strong>: ${course.certificate}</p>
+  <p>${course.description}</p>
+  <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  courseDetailsDialog.showModal();
+
+  closeModal.addEventListener("click", () => {
+    courseDetailsDialog.close();
+  });
+
+  courseDetailsDialog.addEventListener('click', (event) => {
+    if (event.target === courseDetailsDialog) {
+      courseDetailsDialog.close();
+    };
+  });
+}
+
 function createCourses(filteredCourses) {
   coursesDiv.innerHTML = '';
   for (const course of filteredCourses) {
@@ -195,7 +207,11 @@ function createCourses(filteredCourses) {
       }
       courseDiv.innerHTML = `${course.subject} ${course.number} (${course.credits})`;
       coursesDiv.appendChild(courseDiv);
-  }
+
+      courseDiv.addEventListener('click', () => {
+          displayCourseDetailsDialog(course);
+      });
+  };
 }
 
 createCourses(courses);
@@ -208,27 +224,3 @@ let creditsRemaining = courses
 
 creditsRemainingSpan.innerHTML = `(${creditsRemaining} credits remaining)`;
 
-
-// function setActiveLink() {
-//   const links = document.querySelectorAll(".navigation li a");
-//   const currentUrl = window.location.href;
-
-//   // Loop through each link to check the URL and set the active class
-//   links.forEach(link => {
-//     if (link.href === currentUrl) {
-//       link.classList.add('active');
-//     }
-
-//     // Add click event listener for each link
-//     link.addEventListener('click', () => {
-//       // Remove 'active' class from all links before adding to the clicked one
-//       links.forEach(link => link.classList.remove('active'));
-
-//       // Set the clicked link as active
-//       link.classList.add('active');
-//     });
-//   });
-// }
-
-// // Call the function to set active link on page load
-// window.onload = setActiveLink();

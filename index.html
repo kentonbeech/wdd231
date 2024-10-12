@@ -7,6 +7,8 @@
     <meta name="description" content="W01 Home Page">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+
     <title>W01 Home Page</title>
 
     <!-- META TAGS FOR FACEBOOK SOCIAL MEDIA -->
@@ -32,7 +34,7 @@
         <!-- Menu items -->
         <ul class="navigation">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Chamber</a></li>
+          <li><a href="chamber/directory.html">Chamber</a></li>
           <li><a href="#">Github Profile</a></li>
           <li>
             <a href="https://www.linkedin.com/in/kenton-beech/" target="_blank"
@@ -85,11 +87,16 @@
       </div>
     </main>
 
+    <dialog class="modal" id="course-details">
+      <div class="dialog-content">
+        <!-- Dialog content goes here -->
+      </div>
+    </dialog>
+    
     <footer>
       <p><span id="currentyear"></span> | Kenton Beech | South Africa</p>
 
       <p id="lastModified"></p>
     </footer>
   </body>
-  <script src="scripts/main.js" defer></script>
 </html>
