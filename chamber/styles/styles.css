@@ -126,7 +126,7 @@ main {
 }
 
 .hero__image img {
-    width: 80%;
+    width: 55%;
 }
 
 .hero__image__container {
@@ -582,6 +582,10 @@ footer p {
 /* PAGE JOIN STYLES */
 
 @media (max-width: 980px) {
+    .hero__image img {
+        width: 80%;
+    }
+
     #joinMain {
         display: flex;
         flex-direction: column;
