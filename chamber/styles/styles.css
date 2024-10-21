@@ -595,6 +595,10 @@ footer p {
     #form {
         align-items: center;
     }
+
+    .images-div > img:hover {
+        transform: none !important;
+    }
 }
 
 #joinMain {
@@ -613,7 +617,7 @@ footer p {
 }
 
 #form h1 {
-    font-size: xx-large;
+    font-size: 1.7em;
     margin-bottom: 50px;
 }
 
@@ -671,16 +675,21 @@ footer p {
 #membershipInfo {
     width: 1200px;
     max-width: calc(100% - 20px);
-    margin: auto;
+/*    margin: auto;*/
 }
 
 #membershipInfo h1 {
+    font-size: 1.7em;
     text-align: center;
     margin-bottom: 50px;
 }
 
 .membershipInfo-cards {
     animation: 2s slide-right ease, 2s change-color ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 .membershipInfo-cards h2 {
@@ -694,9 +703,27 @@ footer p {
     align-items: center;
     justify-content: center;
     border: 2px solid #001F40;
-    padding: 50px 0;
-    border-radius: 40px;
+    padding: 20px 0;
+    border-radius: 20px;
     gap: 20px;
+    width: 1000px;
+}
+
+.cards img {
+    width: 150px;
+}
+
+.image-text-aligned {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.text-btn-aligned {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @keyframes slide-right {
@@ -728,23 +755,27 @@ footer p {
     }
 }
 
-.cards > button {
+.text-btn-aligned > button {
     background-color: #001F40;
     color: white;
     padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#card1 > .image-text-aligned > img {
+    width: 120px;
 }
 
 #card1 {
-    margin-bottom: 40px;
+    background-color: #bdcebe;
 }
 
 #card2 {
-    margin-bottom: 40px;
     background-color: #CD8150;
 }
 
 #card3 {
-    margin-bottom: 40px;
     background-color: #A8A7A8;
 }
 
@@ -848,6 +879,91 @@ ul.benefits-list {
 
 .save-date {
     text-align: right;
+}
+
+#discoverGrid {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 400px 1fr; */
+}
+
+#discoverGrid > .sidebar {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#discoverGrid > .sidebar > .card {
+    /* width: 30%; */
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.sidebar > .card > h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar > .card > p {
+    font-size: 14px;
+}
+
+.sidebar > .card:last-child {
+    padding: 0 !important;
+    background-color: transparent !important;
+    height: 450px;
+}
+
+#discoverGrid > .sidebar > .card > img {
+    width: 100%;
+    height: auto;
+}
+
+.sidebar > .card > iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.images-section {
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+}
+
+.images-section > .images-div:first-child {
+    margin-top: 0;
+}
+
+#discoverGrid > .images-section > .images-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.images-section > .images-div > img {
+    width: 600px;
+    transition: 1s ease;
+}
+
+.images-div > img:hover {
+    transform: scale(1.07);
+    transition: 1s ease;
+}
+
+@media (max-width: 1080px) {
+    #discoverGrid {
+        display: flex;
+        flex-direction: column;
+    }
+    .images-section > .images-div:first-child {
+        margin-top: 60px;
+    }
 }
 
 @media(max-width: 768px) {
