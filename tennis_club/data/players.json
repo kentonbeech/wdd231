@@ -1,0 +1,62 @@
+{"players": [
+    {
+        "name": "Roger Federer",
+        "image": "images/federer.webp"
+    },
+    {
+        "name": "Rafael Nadal",
+        "image": "images/nadal.jpg"
+    },
+    {
+        "name": "Novak Djokovic",
+        "image": "images/novak.jpg"
+    },
+    {
+        "name": "Serena Williams",
+        "image": "images/williams.jpg"
+    },
+    {
+        "name": "Carlos Alcaraz",
+        "image": "images/alcaraz.jpg"
+    },
+    {
+        "name": "Alexander Zverev",
+        "image": "images/zverev.jpg"
+    },
+    {
+        "name": "Daniil Medvedev",
+        "image": "images/medvedev.jpg"
+    },
+    {
+        "name": "Grigor Dimitrov",
+        "image": "images/dimitrov.jpg"
+    },
+    {
+        "name": "Alex de Minaur",
+        "image": "images/alex.jpg"
+    },
+    {
+        "name": "Stefanos Tsitsipas",
+        "image": "images/stefanos.jpg"
+    },
+    {
+        "name": "Frances Tiafoe",
+        "image": "images/tiafoe.jpg"
+    },
+    {
+        "name": "Felix Auger-Aliassime",
+        "image": "images/felix.jpg"
+    },
+    {
+        "name": "Gael Monfils",
+        "image": "images/monfils.jpg"
+    },
+    {
+        "name": "David Goffin",
+        "image": "images/goffin.jpg"
+    },
+    {
+        "name": "Nick Kyrgios",
+        "image": "images/nick.jpg"
+    }
+]}
